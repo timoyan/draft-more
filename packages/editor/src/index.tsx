@@ -3,9 +3,9 @@ import * as ReactDOM from "react-dom";
 
 import 'normalize.css';
 
-import { DraftSample } from "./components/draftSample";
+import { RichEditorExample } from "./components/draftSample";
 
 ReactDOM.render(
-    <DraftSample />,
+    <RichEditorExample />,
     document.getElementById("example")
 );

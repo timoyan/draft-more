@@ -29,7 +29,7 @@ module.exports = {
     module: {
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, include: [resolveApp('src')], loader: require.resolve('awesome-typescript-loader') },
+            { test: [/\.tsx?$/,/\.ts?$/], include: [resolveApp('src')], loader: require.resolve('awesome-typescript-loader') },
             {
                 test: cssRegex, use: [require.resolve('style-loader'), require.resolve('css-loader')]
             }
