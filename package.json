@@ -1,0 +1,32 @@
+{
+  "name": "@draft-more/root",
+  "version": "independent",
+  "description": "",
+  "scripts": {
+    "bootstrap": "npx lerna clean --yes && npx lerna bootstrap",
+    "dev": "cd packages/editor && npx webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timoyan/draft-more.git"
+  },
+  "author": "Timo Yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timoyan/draft-more/issues"
+  },
+  "homepage": "https://github.com/timoyan/draft-more#readme",
+  "devDependencies": {
+    "@types/draft-js": "0.10.29",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.3",
+    "awesome-typescript-loader": "5.2.1",
+    "lerna": "3.13.1",
+    "typescript": "3.3.4000"
+  },
+  "dependencies": {
+    "draft-js": "^0.10.5",
+    "react": "16.8.5",
+    "react-dom": "16.8.5"
+  }
+}
